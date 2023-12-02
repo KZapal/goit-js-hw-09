@@ -20,7 +20,7 @@ function cos(event) {
 
   const { delay, step, amount } = event.currentTarget.elements;
 
-  for (i = 0; i < amount.value; i++) {
+  for (const i = 0; i < amount.value; i++) {
     let position = i + 1;
     let finallyDelay = Number(delay.value) + Number(step.value) * i;
     createPromise(position, finallyDelay)
